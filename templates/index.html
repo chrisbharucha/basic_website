@@ -1,0 +1,46 @@
+<!--this is the home page of the website-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div>
+        {% block content %}
+        <!--header-->
+        <h1 style = "font-family:'Courier New', Courier, monospace;">
+            welcome to my plant page!</h1>
+
+        <!--paragraph-->
+        <p style = "font-family: 'Courier New', Courier, monospace;">
+            This is a library of all the plants I have been growing
+            <br>
+            since starting my collection during the lockdown. I 
+            <br>
+            created this to keep general info for plant care for all 
+            <br>
+            my plants. Enjoy!
+        </p>
+
+        <!--hyperlink to cacti webpage-->
+        <a style = "font-family: 'Courier New', Courier, monospace;" href="http://127.0.0.1:5000/cacti">cacti</a>
+        <br>
+        <!--hyperlink to succulents webpage-->
+        <a style = "font-family: 'Courier New', Courier, monospace;" href="http://127.0.0.1:5000/succulents">succulents</a>
+        <br>
+        <a style = "font-family: 'Courier New', Courier, monospace;" href="http://127.0.0.1:5000/houseplants">houseplants</a>
+        <br>
+        
+        <!--plant gif-->
+        <img src="https://webstockreview.net/images/planting-clipart-animation-4.gif" alt="plant gif" width="100%">
+        {% endblock %}
+    </div>
+    <script 
+    type="text/javascript" 
+    src="{{url_for('static', filename='index.js')}}"
+    ></script>
+</body>
+</html>

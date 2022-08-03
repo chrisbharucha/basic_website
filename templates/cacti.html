@@ -1,0 +1,31 @@
+<!--this is the cacti web page. it uses the framework of the home page-->
+{% extends "index.html" %} 
+{% block content %}
+<!--redirects you home-->
+<p style = "font-family: 'Courier New', Courier, monospace;">
+    <a href="http://127.0.0.1:5000/"><- home</a>
+</p>
+
+<!--header-->
+<h1 style = "color:MediumSeaGreen;font-family: 'Courier New', Courier, monospace;">
+    a list of my collection</h1>
+
+    <!--hyperlinks to specific cacti web pages-->
+    <a style = "font-family: 'Courier New', Courier, monospace;" 
+    href="http://127.0.0.1:5000/cacti/goldenbarrel">golden barrel</a>
+    <br>
+    <a style = "font-family: 'Courier New', Courier, monospace;" 
+    href="http://127.0.0.1:5000/cacti/mingthing">ming thing</a>
+    <br>
+    <a style = "font-family: 'Courier New', Courier, monospace;" 
+    href="http://127.0.0.1:5000/cacti/lobiviaarachnacantha">lobivia arachnacantha</a>
+    <br>
+    <a style = "font-family: 'Courier New', Courier, monospace;" 
+    href="http://127.0.0.1:5000/cacti/bunnyear">bunny ear</a>
+    <br>
+    <a style = "font-family: 'Courier New', Courier, monospace;" 
+    href="http://127.0.0.1:5000/cacti/bluecolumn">blue column</a>
+    <br>
+
+
+{% endblock %}
